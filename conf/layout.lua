@@ -1,0 +1,10 @@
+-- Configuration options (Dwindle & Master Layouts)
+hl.config({
+    dwindle = {
+        preserve_split = true, -- You probably want this
+    },
+
+    master = {
+        new_status = "master",
+    },
+})

@@ -1,0 +1,65 @@
+# ██╗  ██╗██╗   ██╗██████╗ ██████╗ ██╗      █████╗ ███╗   ██╗██████╗ 
+# ██║  ██║╚██╗ ██╔╝██╔══██╗██╔══██╗██║     ██╔══██╗████╗  ██║██╔══██╗
+# ███████║ ╚████╔╝ ██████╔╝██████╔╝██║     ███████║██╔██╗ ██║██║  ██║
+# ██╔══██║  ╚██╔╝  ██╔═══╝ ██╔══██╗██║     ██╔══██║██║╚██╗██║██║  ██║
+# ██║  ██║   ██║   ██║     ██║  ██║███████╗██║  ██║██║ ╚████║██████╔╝
+# ╚═╝  ╚═╝   ╚═╝   ╚═╝     ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═════╝ 
+# -------------------------------------------------------------------
+
+
+
+################
+### MONITORS ###
+################
+source = ~/.config/hypr/conf/monitors.hl
+
+
+###################
+### MY PROGRAMS ###
+###################
+source = ~/.config/hypr/conf/programs.hl
+
+
+#################
+### AUTOSTART ###
+#################
+source = ~/.config/hypr/conf/autostart.hl
+
+
+#############################
+### ENVIRONMENT VARIABLES ###
+#############################
+source = ~/.config/hypr/conf/environment.hl
+
+
+#####################
+### LOOK AND FEEL ###
+#####################
+source = ~/.config/hypr/conf/appearance.hl
+source = ~/.config/hypr/conf/animation.hl
+source = ~/.config/hypr/conf/layout.hl
+source = ~/.config/hypr/conf/misc.hl
+
+
+#############
+### INPUT ###
+#############
+source = ~/.config/hypr/conf/input.hl
+
+
+###################
+### KEYBINDINGS ###
+###################
+source = ~/.config/hypr/conf/keybinding.hl
+
+
+####################
+### WINDOWS RULE ###
+####################
+source = ~/.config/hypr/conf/windowrule.hl
+
+
+#######################
+### WORKSPACES RULE ###
+#######################
+source = ~/.config/hypr/conf/workspaces.hl
