@@ -35,7 +35,7 @@ hl.bind(mainMod .. " + period", hl.dsp.exec_cmd("~/.config/viegphunt/emoji_launc
 hl.bind(mainMod .. " + V", hl.dsp.exec_cmd("~/.config/viegphunt/clipboard_launcher.sh"))
 hl.bind(mainMod .. " + W", hl.dsp.exec_cmd("~/.config/viegphunt/wallpaper_select.sh"))
 hl.bind(mainMod .. " + SHIFT + W", hl.dsp.exec_cmd("~/.config/viegphunt/wallpaper_random.sh"))
-hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd("hyprshot -m region -o $HOME/Pictures/Screenshots"))
+hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd("hyprshot -m region --freeze -o $HOME/Pictures/Screenshots"))
 
 -- Move focus
 hl.bind(mainMod .. " + left", hl.dsp.focus({ direction = "l" }))
