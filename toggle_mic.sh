@@ -1,14 +1,14 @@
 #!/bin/bash
 
-# 1. Toggle the microphone mute state
+# 1. Toggle mute on EasyEffects virtual source and hardware Built-in Audio Pro (Node 60)
 wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle
+wpctl set-mute 60 toggle
 
-# 2. Query the new state (returns "Muted: yes" or "Muted: no")
-MUTED=$(wpctl get-volume @DEFAULT_AUDIO_SOURCE@ | grep -o "MUTED")
-
-# 3. Synchronize the physical LED brightness state
-if [ "$MUTED" = "MUTED" ]; then
-    brightnessctl -d "platform::micmute" set 1
+# 2. Check if the default source is now muted
+if wpctl get-volume @DEFAULT_AUDIO_SOURCE@ | grep -q "MUTED"; then
+    # Turn LED ON (Muted)
+    brightnessctl -d "platform::micmute" set 1 2>/dev/null || true
 else
-    brightnessctl -d "platform::micmute" set 0
+    # Turn LED OFF (Unmuted)
+    brightnessctl -d "platform::micmute" set 0 2>/dev/null || true
 fi
