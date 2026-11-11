@@ -18,8 +18,7 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("fcitx5 -d")
 
     -- Setup hyprlock
-    -- Setup hyprlock
-hl.exec_cmd("hyprlock --config /home/notsasby/.config/hypr/hyprlock.hl")
+hl.exec_cmd("hyprlock --config /home/notsasby/.config/hypr/hyprlock.conf")
 
     -- Setup screen sharing
     hl.exec_cmd("dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP")
