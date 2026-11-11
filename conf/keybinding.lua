@@ -29,7 +29,7 @@ hl.bind(mainMod .. " + F", hl.dsp.window.float())
 hl.bind(mainMod .. " + J", function() hl.dispatch(hl.dsp.layout("togglesplit")) end)
 
 -- Launchers & Scripts
-hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("hyprlock --config /home/notsasby/.config/hypr/hyprlock.hl"))
+hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("hyprlock --config /home/notsasby/.config/hypr/hyprlock.conf"))
 hl.bind("ALT + Space", hl.dsp.exec_cmd("~/.config/viegphunt/app_launcher.sh"))
 hl.bind(mainMod .. " + period", hl.dsp.exec_cmd("~/.config/viegphunt/emoji_launcher.sh"))
 hl.bind(mainMod .. " + V", hl.dsp.exec_cmd("~/.config/viegphunt/clipboard_launcher.sh"))
