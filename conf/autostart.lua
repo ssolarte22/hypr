@@ -23,6 +23,12 @@ hl.exec_cmd("hyprlock --config /home/notsasby/.config/hypr/hyprlock.conf")
     -- Setup screen sharing
     hl.exec_cmd("dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP")
 
+    -- Setup screen sharing
+    hl.exec_cmd("dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP")
+
+    -- Setup polkit authentication agent
+    hl.exec_cmd("systemctl --user start hyprpolkitagent")
+    
     -- Setup clipboard
     hl.exec_cmd("cliphist wipe")
     hl.exec_cmd("wl-paste --type text --watch cliphist store")
